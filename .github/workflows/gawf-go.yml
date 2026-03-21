@@ -1,0 +1,13 @@
+name: Example CI for Simple Calculator
+on:
+  push:
+    branches: [master]
+
+jobs:
+  call-reusable:
+    uses: nandcep/gawf-go/.github/workflows/workflow.yml@master
+    with:
+      GO_SDK: "1.25.8"
+      BINARY_NAME: "simple-calc"
+      GOSEC_PARAMS: ""
+      SOURCE_TO_IMAGE: false
