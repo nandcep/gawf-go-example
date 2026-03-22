@@ -4,7 +4,7 @@ on:
     branches: [master]
 
 jobs:
-  call-reusable:
+  ci-gawf-go:
     uses: nandcep/gawf-go/.github/workflows/workflow.yml@master
     with:
       GO_SDK: "1.25.8"
