@@ -6,6 +6,7 @@ on:
 jobs:
   ci-gawf-go:
     uses: nandcep/gawf-go/.github/workflows/workflow.yml@master
+    secrets: inherit
     with:
       GO_SDK: "1.25.8"
       BINARY_NAME: "simple-calc"
